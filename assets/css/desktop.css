@@ -25,14 +25,13 @@
   padding-left: 50px;
 }
 
-
-
 .header-contact {
   height: 100%;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   padding-right: 50px;
   float: right;
+  font-weight: bolder;
 }
 
 .form-group {
@@ -61,7 +60,7 @@
 }
 
 .rtp-card-text {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .cta-btn {
@@ -156,16 +155,16 @@
 }
 
 .info-text {
-  font-size: 0.9em;
+  font-size: 1.0em;
   padding-left: 40px;
 }
 
 .contact-info {
-  height: 180px;
+  height: 250px;
 }
 
 .contact-map {
-  height: 180px;
+  height: 250px;
 }
 
 .info-icon {
@@ -181,7 +180,7 @@
 }
 
 .footer-logo {
-  width: 300px;
+  width: 250px;
   height: auto;
 }
 
@@ -209,17 +208,14 @@
     15px;
 }
 
-
-
 .modal .form-group {
   padding: 0;
+  text-align: center;
 }
 
 .product-container {
   padding: 50px 0;
 }
-
-
 
 .product-title {
   padding: 30px 0;
@@ -257,4 +253,10 @@
 
 .list-group-item {
   font-size: 1.0em;
+  padding: 10px 5px;
+}
+
+.map {
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
