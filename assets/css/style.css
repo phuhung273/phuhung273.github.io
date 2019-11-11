@@ -232,10 +232,7 @@ svg {
   height: auto;
 }
 
-.rtp-card-text {
-  text-align: left;
-  list-style-position: inside;
-}
+
 
 .after-header {
   padding-top: 0;
@@ -476,5 +473,18 @@ svg {
 .highlight {
   /*  background-color: yellow;*/
   color: red;
+  font-weight: bolder;
+}
+
+.rtp-card-title {
+  margin: 0 auto;
+}
+
+.header-contact img {
+  height: 60%;
+}
+
+.header-hotline {
+  padding: 0 15px;
   font-weight: bolder;
 }

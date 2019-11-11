@@ -31,7 +31,6 @@
   box-sizing: content-box;
   padding-right: 50px;
   float: right;
-  font-weight: bolder;
 }
 
 .form-group {
@@ -155,7 +154,7 @@
 }
 
 .info-text {
-  font-size: 1.0em;
+  font-size: 1.2em;
   padding-left: 40px;
 }
 
