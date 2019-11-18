@@ -28,7 +28,7 @@
 
     <div class="header-contact d-none d-md-flex align-items-center">
       <img class="header-icon" src="assets/image/telephone.svg" alt="Hotline Ms.My Shinhan Finance">
-      <div class="header-hotline">Hotline: 0981 478 708 Ms.My</div>
+      <div class="header-hotline">Hotline: <span class="header-phone-number">0981 478 708</span> Ms.My</div>
     </div>
   </section>
   <!--  End Header-->
@@ -78,25 +78,25 @@
       <form id="page-form" class="form-info d-flex flex-column align-items-center">
         <div class="row">
           <div class="form-group col-12 col-md-5">
-            <input class="input-field user form-control" name="user" type="text" placeholder="Họ Tên">
+            <input class="input-field user form-control" name="Họ và Tên" type="text" placeholder="Họ Tên">
           </div>
           <div class="form-group col-12 col-md-5">
-            <input class="input-field phone form-control" name="phone" type="text" placeholder="Số điện thoại">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="form-group col-12 col-md-5">
-            <input class="input-field company form-control" name="company" type="text" placeholder="Cơ quan hiện tại">
-          </div>
-          <div class="form-group col-12 col-md-5">
-            <input class="input-field address form-control" name="address" type="text" placeholder="Địa chỉ">
+            <input class="input-field phone form-control" name="Số điện thoại" type="text" placeholder="Số điện thoại">
           </div>
         </div>
 
         <div class="row">
           <div class="form-group col-12 col-md-5">
-            <select class="input-field income form-control" name="income">
+            <input class="input-field company form-control" name="Tên công ty đang công tác" type="text" placeholder="Cơ quan hiện tại">
+          </div>
+          <div class="form-group col-12 col-md-5">
+            <input class="input-field address form-control" name="Địa chỉ chỗ ở hiện tại" type="text" placeholder="Địa chỉ">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-12 col-md-5">
+            <select class="input-field income form-control" name="Thu nhập hàng tháng">
               <option value="" disabled selected>Thu nhập hàng tháng</option>
               <option value="Dưới 5 triệu">Dưới 5 triệu</option>
               <option value="5 - 10 triệu">5 - 10 triệu</option>
@@ -106,7 +106,7 @@
             </select>
           </div>
           <div class="form-group col-12 col-md-5">
-            <input class="input-field money form-control" name="money" type="text" placeholder="Số tiền cần vay">
+            <input class="input-field money form-control" name="Số tiền cần vay" type="text" placeholder="Số tiền cần vay">
           </div>
         </div>
         <button type="submit" class="cta-btn btn rounded-pill">Đăng Ký</button>
@@ -129,8 +129,8 @@
           </div>
         </div>
         <div class="rtp-card-title card-title">lãi suất</div>
-        <div class="rtp-card-text">Lãi suất <span class="highlight">chỉ từ 0.8%</span> mỗi tháng.</div>
-        <div class="rtp-card-text"><span class="highlight">Ưu đãi đặc biệt</span> cho bảo vệ, tài xế và người lao động.</div>
+        <div class="rtp-card-text">Lãi suất <span class="highlight">chỉ từ 0.8%</span> mỗi tháng.<br>
+          <span class="highlight">Ưu đãi đặc biệt</span> cho bảo vệ, tài xế và người lao động.</div>
       </div>
       <!--      End First RTP-->
 
@@ -154,8 +154,8 @@
           </div>
         </div>
         <div class="rtp-card-title card-title">hạn mức</div>
-        <div class="rtp-card-text">Hạn mức lên đến <span class="highlight">100 triệu</span>.</div>
-        <div class="rtp-card-text">Chỉ cần đi làm <span class="highlight">ít nhất 2 tháng.</span></div>
+        <div class="rtp-card-text">Hạn mức lên đến <span class="highlight">100 triệu</span><br>
+          Chỉ cần đi làm <span class="highlight">ít nhất 2 tháng.</span></div>
       </div>
       <!--      End Second RTP-->
 
@@ -177,8 +177,8 @@
           </div>
         </div>
         <div class="rtp-card-title card-title">thủ tục</div>
-        <div class="rtp-card-text"><span class="highlight">Cam kết bảo mật</span> tất cả thông tin vay.</div>
-        <div class="rtp-card-text">Giấy tờ <span class="highlight">đơn giản nhanh gọn</span>, đăng ký sớm có tiền ngay.</div>
+        <div class="rtp-card-text"><span class="highlight">Cam kết bảo mật</span> tất cả thông tin vay. <br>
+          Giấy tờ <span class="highlight">đơn giản nhanh gọn</span>, đăng ký sớm có tiền ngay.</div>
       </div>
       <!--      End Third RTP-->
     </div>
@@ -261,7 +261,7 @@
         </div>
 
         <ul class="product-card-text list-group d-flex flex-column justify-content-center align-items-center">
-          <li class="list-group-item">Hạn mức tối đa 190 triệu</li>
+          <li class="list-group-item">Hạn mức tối đa 100 triệu</li>
           <li class="list-group-item">Duyệt trong 2 ngày</li>
         </ul>
         <div class="product-card-footer d-none d-md-block card-footer">
@@ -312,8 +312,8 @@
   <!--Testinomial-->
   <section class="customer-container">
     <div class="customer-wrapper">
-      <div class="customer-title d-none d-md-block">Khách hàng nói gì về Shinhan Finance</div>
-      <div class="customer-title d-md-none">phản hồi từ khách hàng</div>
+      <div class="customer-title d-none d-lg-block">Khách hàng nói gì về Shinhan Finance</div>
+      <div class="customer-title d-lg-none d-block">Phản hồi từ khách hàng</div>
 
       <div class="owl-carousel">
         <div class="item">
@@ -395,21 +395,31 @@
       <div class="contact-info col-md-10 col-lg-5 d-flex flex-column justify-content-around">
         <div class="info-row">
           <div class="info-icon">
+            <svg viewBox="0 0 47.001 47">
+              <path d="M44.863,0H14.421c-1.181,0-2.137,0.957-2.137,2.136v19.229H2.137C0.957,21.365,0,22.32,0,23.5v21.364C0,46.044,0.957,47,2.137,47h20.295h22.431c1.181,0,2.138-0.957,2.138-2.136V23.5V2.136C47,0.958,46.043,0,44.863,0zM16.557,4.273h26.171v15.602l-8.045-4.453c-0.646-0.355-1.426-0.355-2.07,0L21.88,21.365h-5.322L16.557,4.273L16.557,4.273zM4.272,25.636H14.42h5.875v17.091H4.272V25.636z M42.729,42.727H24.568V24.759l9.079-5.026l9.08,5.026v17.968H42.729z" />
+              <path d="M10.147,28.307H6.943c-0.295,0-0.534,0.239-0.534,0.534v3.205c0,0.295,0.239,0.534,0.534,0.534h3.204c0.296,0,0.534-0.239,0.534-0.534v-3.205C10.682,28.546,10.443,28.307,10.147,28.307z" />
+              <path d="M17.625,28.307h-3.204c-0.296,0-0.534,0.239-0.534,0.534v3.205c0,0.295,0.238,0.534,0.534,0.534h3.204c0.295,0,0.534-0.239,0.534-0.534v-3.205C18.159,28.546,17.92,28.307,17.625,28.307z" />
+              <path d="M10.147,35.785H6.943c-0.295,0-0.534,0.239-0.534,0.534v3.205c0,0.295,0.239,0.533,0.534,0.533h3.204c0.296,0,0.534-0.238,0.534-0.533v-3.205C10.682,36.024,10.443,35.785,10.147,35.785z" />
+              <path d="M17.625,35.785h-3.204c-0.296,0-0.534,0.239-0.534,0.534v3.205c0,0.295,0.238,0.533,0.534,0.533h3.204c0.295,0,0.534-0.238,0.534-0.533v-3.205C18.159,36.024,17.92,35.785,17.625,35.785z" />
+              <path d="M31.512,28.307h-3.205c-0.295,0-0.533,0.239-0.533,0.534v3.205c0,0.295,0.238,0.534,0.533,0.534h3.205c0.295,0,0.534-0.239,0.534-0.534v-3.205C32.046,28.546,31.807,28.307,31.512,28.307z" />
+              <path d="M35.784,32.581h3.204c0.296,0,0.533-0.239,0.533-0.534v-3.205c0-0.295-0.237-0.534-0.533-0.534h-3.204c-0.296,0-0.534,0.239-0.534,0.534v3.205C35.25,32.341,35.488,32.581,35.784,32.581z" />
+              <path d="M31.512,35.785h-3.205c-0.295,0-0.533,0.239-0.533,0.534v3.205c0,0.295,0.238,0.533,0.533,0.533h3.205c0.295,0,0.534-0.238,0.534-0.533v-3.205C32.046,36.024,31.807,35.785,31.512,35.785z" />
+              <path d="M35.784,40.057h3.204c0.296,0,0.533-0.238,0.533-0.533v-3.205c0-0.295-0.237-0.534-0.533-0.534h-3.204c-0.296,0-0.534,0.239-0.534,0.534v3.205C35.25,39.819,35.488,40.057,35.784,40.057z" />
+              <path d="M20.829,11.951h3.205c0.295,0,0.534-0.239,0.534-0.534V8.211c0-0.295-0.239-0.534-0.534-0.534h-3.205c-0.295,0-0.533,0.239-0.533,0.534v3.205C20.296,11.711,20.534,11.951,20.829,11.951z" />
+              <path d="M28.307,11.951h3.205c0.295,0,0.534-0.239,0.534-0.534V8.211c0-0.295-0.239-0.534-0.534-0.534h-3.205c-0.295,0-0.533,0.239-0.533,0.534v3.205C27.771,11.711,28.012,11.951,28.307,11.951z" />
+              <path d="M24.034,19.428c0.295,0,0.534-0.239,0.534-0.534v-3.205c0-0.295-0.239-0.534-0.534-0.534h-3.205c-0.295,0-0.533,0.239-0.533,0.534v3.205c0,0.295,0.238,0.534,0.533,0.534H24.034z" />
+              <path d="M35.784,11.951h3.204c0.296,0,0.533-0.239,0.533-0.534V8.211c0-0.295-0.237-0.534-0.533-0.534h-3.204c-0.296,0-0.534,0.239-0.534,0.534v3.205C35.25,11.711,35.488,11.951,35.784,11.951z" />
+            </svg>
+          </div>
+          <div class="info-text">Trung tâm Thương mại Sài Gòn, Tầng 23</div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">
             <svg viewBox="0 0 97.713 97.713">
               <path d="M48.855,0C29.021,0,12.883,16.138,12.883,35.974c0,5.174,1.059,10.114,3.146,14.684c8.994,19.681,26.238,40.46,31.31,46.359c0.38,0.441,0.934,0.695,1.517,0.695s1.137-0.254,1.517-0.695c5.07-5.898,22.314-26.676,31.311-46.359c2.088-4.57,3.146-9.51,3.146-14.684C84.828,16.138,68.69,0,48.855,0z M48.855,54.659c-10.303,0-18.686-8.383-18.686-18.686c0-10.304,8.383-18.687,18.686-18.687s18.686,8.383,18.686,18.687C67.542,46.276,59.159,54.659,48.855,54.659z" />
             </svg>
           </div>
           <div class="info-text">37 Tôn Đức Thắng, P.Bến Nghé, Quận 1</div>
-        </div>
-        <div class="info-row">
-          <div class="info-icon">
-            <svg viewBox="0 0 480.56 480.56">
-              <path d="M365.354,317.9c-15.7-15.5-35.3-15.5-50.9,0c-11.9,11.8-23.8,23.6-35.5,35.6c-3.2,3.3-5.9,4-9.8,1.8c-7.7-4.2-15.9-7.6-23.3-12.2c-34.5-21.7-63.4-49.6-89-81c-12.7-15.6-24-32.3-31.9-51.1c-1.6-3.8-1.3-6.3,1.8-9.4c11.9-11.5,23.5-23.3,35.2-35.1c16.3-16.4,16.3-35.6-0.1-52.1c-9.3-9.4-18.6-18.6-27.9-28c-9.6-9.6-19.1-19.3-28.8-28.8c-15.7-15.3-35.3-15.3-50.9,0.1c-12,11.8-23.5,23.9-35.7,35.5c-11.3,10.7-17,23.8-18.2,39.1c-1.9,24.9,4.2,48.4,12.8,71.3c17.6,47.4,44.4,89.5,76.9,128.1c43.9,52.2,96.3,93.5,157.6,123.3c27.6,13.4,56.2,23.7,87.3,25.4c21.4,1.2,40-4.2,54.9-20.9c10.2-11.4,21.7-21.8,32.5-32.7c16-16.2,16.1-35.8,0.2-51.8C403.554,355.9,384.454,336.9,365.354,317.9z" />
-              <path d="M346.254,238.2l36.9-6.3c-5.8-33.9-21.8-64.6-46.1-89c-25.7-25.7-58.2-41.9-94-46.9l-5.2,37.1c27.7,3.9,52.9,16.4,72.8,36.3C329.454,188.2,341.754,212,346.254,238.2z" />
-              <path d="M403.954,77.8c-42.6-42.6-96.5-69.5-156-77.8l-5.2,37.1c51.4,7.2,98,30.5,134.8,67.2c34.9,34.9,57.8,79,66.1,127.5l36.9-6.3C470.854,169.3,444.354,118.3,403.954,77.8z" />
-            </svg>
-          </div>
-          <div class="info-text">0981.478.708</div>
         </div>
         <div class="info-row">
           <div class="info-icon">
@@ -420,14 +430,28 @@
           </div>
           <div class="info-text">kieumy.hitu@gmail.com</div>
         </div>
-        <div class="info-row">
-          <div class="info-icon">
-            <svg viewBox="0 0 365.449 365.449">
-              <path d="M281.507,10.85C274.279,3.614,265.71,0,255.813,0H109.637c-9.9,0-18.464,3.617-25.697,10.85c-7.233,7.229-10.85,15.796-10.85,25.693v292.361c0,9.896,3.617,18.462,10.85,25.693c7.233,7.234,15.797,10.852,25.697,10.852h146.176c9.896,0,18.466-3.621,25.693-10.852c7.234-7.231,10.852-15.797,10.852-25.693V36.543C292.358,26.646,288.745,18.083,281.507,10.85z M159.885,36.543h45.685c3.046,0,4.565,1.523,4.565,4.569c0,3.045-1.52,4.57-4.565,4.57h-45.685c-3.045,0-4.568-1.525-4.568-4.57C155.316,38.066,156.839,36.543,159.885,36.543zM198.861,345.036c-4.476,4.469-9.852,6.707-16.135,6.707c-6.28,0-11.656-2.238-16.13-6.707c-4.474-4.477-6.711-9.856-6.711-16.132c0-6.283,2.24-11.66,6.711-16.133c4.471-4.469,9.851-6.714,16.13-6.714c6.284,0,11.66,2.245,16.135,6.714c4.473,4.473,6.708,9.85,6.708,16.133S203.331,340.56,198.861,345.036z M264.954,283.225c0,2.471-0.903,4.62-2.714,6.424c-1.813,1.807-3.949,2.707-6.42,2.707H109.637c-2.474,0-4.615-0.903-6.423-2.707s-2.712-3.953-2.712-6.424V82.229c0-2.474,0.903-4.617,2.712-6.423c1.809-1.805,3.949-2.714,6.423-2.714h146.176c2.478,0,4.616,0.905,6.427,2.714c1.811,1.807,2.71,3.949,2.71,6.423v200.995H264.954z" />
-            </svg>
+        <a href="tel:0981478708">
+          <div class="info-row">
+            <div class="info-icon">
+              <svg viewBox="0 0 480.56 480.56">
+                <path d="M365.354,317.9c-15.7-15.5-35.3-15.5-50.9,0c-11.9,11.8-23.8,23.6-35.5,35.6c-3.2,3.3-5.9,4-9.8,1.8c-7.7-4.2-15.9-7.6-23.3-12.2c-34.5-21.7-63.4-49.6-89-81c-12.7-15.6-24-32.3-31.9-51.1c-1.6-3.8-1.3-6.3,1.8-9.4c11.9-11.5,23.5-23.3,35.2-35.1c16.3-16.4,16.3-35.6-0.1-52.1c-9.3-9.4-18.6-18.6-27.9-28c-9.6-9.6-19.1-19.3-28.8-28.8c-15.7-15.3-35.3-15.3-50.9,0.1c-12,11.8-23.5,23.9-35.7,35.5c-11.3,10.7-17,23.8-18.2,39.1c-1.9,24.9,4.2,48.4,12.8,71.3c17.6,47.4,44.4,89.5,76.9,128.1c43.9,52.2,96.3,93.5,157.6,123.3c27.6,13.4,56.2,23.7,87.3,25.4c21.4,1.2,40-4.2,54.9-20.9c10.2-11.4,21.7-21.8,32.5-32.7c16-16.2,16.1-35.8,0.2-51.8C403.554,355.9,384.454,336.9,365.354,317.9z" />
+                <path d="M346.254,238.2l36.9-6.3c-5.8-33.9-21.8-64.6-46.1-89c-25.7-25.7-58.2-41.9-94-46.9l-5.2,37.1c27.7,3.9,52.9,16.4,72.8,36.3C329.454,188.2,341.754,212,346.254,238.2z" />
+                <path d="M403.954,77.8c-42.6-42.6-96.5-69.5-156-77.8l-5.2,37.1c51.4,7.2,98,30.5,134.8,67.2c34.9,34.9,57.8,79,66.1,127.5l36.9-6.3C470.854,169.3,444.354,118.3,403.954,77.8z" />
+              </svg>
+            </div>
+            <div class="info-text">0981 478 708</div>
           </div>
-          <div class="info-text">Zalo: 0981.478.708</div>
-        </div>
+        </a>
+        <a href="tel:0981478708">
+          <div class="info-row">
+            <div class="info-icon">
+              <svg viewBox="0 0 365.449 365.449">
+                <path d="M281.507,10.85C274.279,3.614,265.71,0,255.813,0H109.637c-9.9,0-18.464,3.617-25.697,10.85c-7.233,7.229-10.85,15.796-10.85,25.693v292.361c0,9.896,3.617,18.462,10.85,25.693c7.233,7.234,15.797,10.852,25.697,10.852h146.176c9.896,0,18.466-3.621,25.693-10.852c7.234-7.231,10.852-15.797,10.852-25.693V36.543C292.358,26.646,288.745,18.083,281.507,10.85z M159.885,36.543h45.685c3.046,0,4.565,1.523,4.565,4.569c0,3.045-1.52,4.57-4.565,4.57h-45.685c-3.045,0-4.568-1.525-4.568-4.57C155.316,38.066,156.839,36.543,159.885,36.543zM198.861,345.036c-4.476,4.469-9.852,6.707-16.135,6.707c-6.28,0-11.656-2.238-16.13-6.707c-4.474-4.477-6.711-9.856-6.711-16.132c0-6.283,2.24-11.66,6.711-16.133c4.471-4.469,9.851-6.714,16.13-6.714c6.284,0,11.66,2.245,16.135,6.714c4.473,4.473,6.708,9.85,6.708,16.133S203.331,340.56,198.861,345.036z M264.954,283.225c0,2.471-0.903,4.62-2.714,6.424c-1.813,1.807-3.949,2.707-6.42,2.707H109.637c-2.474,0-4.615-0.903-6.423-2.707s-2.712-3.953-2.712-6.424V82.229c0-2.474,0.903-4.617,2.712-6.423c1.809-1.805,3.949-2.714,6.423-2.714h146.176c2.478,0,4.616,0.905,6.427,2.714c1.811,1.807,2.71,3.949,2.71,6.423v200.995H264.954z" />
+              </svg>
+            </div>
+            <div class="info-text">Zalo: 0981 478 708</div>
+          </div>
+        </a>
       </div>
 
       <div class="contact-map col-lg-5 d-none d-lg-inline">
@@ -437,12 +461,6 @@
     </div>
   </section>
   <!--  End Contact-->
-
-  <!--  Footer-->
-  <section class="footer">
-    <img class="footer-logo" src="assets/image/logo-(final).png" alt="Vay tiêu dùng Shinhan Finance">
-  </section>
-  <!--  End Footer-->
 
   <!--  Modal - Popup form-->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -457,21 +475,21 @@
         <div class="modal-body">
           <form id="popup-form" class="form-info d-flex flex-column align-items-center">
             <div class="form-group col-12 col-md-10">
-              <input class="input-field user form-control" name="user" type="text" placeholder="Họ Tên">
+              <input id="user" class="input-field user form-control" name="Họ và Tên" type="text" placeholder="Họ Tên">
             </div>
             <div class="form-group col-12 col-md-10">
-              <input class="input-field phone form-control" name="phone" type="text" placeholder="Số điện thoại">
-            </div>
-
-            <div class="form-group col-12 col-md-10">
-              <input class="input-field company form-control" name="company" type="text" placeholder="Cơ quan hiện tại">
-            </div>
-            <div class="form-group col-12 col-md-10">
-              <input class="input-field address form-control" name="address" type="text" placeholder="Địa chỉ">
+              <input class="input-field phone form-control" name="Số điện thoại" type="text" placeholder="Số điện thoại">
             </div>
 
             <div class="form-group col-12 col-md-10">
-              <select class="input-field income form-control" name="income">
+              <input class="input-field company form-control" name="Tên công ty đang công tác" type="text" placeholder="Cơ quan hiện tại">
+            </div>
+            <div class="form-group col-12 col-md-10">
+              <input class="input-field address form-control" name="Địa chỉ chỗ ở hiện tại" type="text" placeholder="Địa chỉ">
+            </div>
+
+            <div class="form-group col-12 col-md-10">
+              <select class="input-field income form-control" name="Thu nhập hàng tháng">
                 <option value="" disabled selected>Thu nhập hàng tháng</option>
                 <option value="Dưới 5 triệu">Dưới 5 triệu</option>
                 <option value="5 - 10 triệu">5 - 10 triệu</option>
@@ -481,7 +499,7 @@
               </select>
             </div>
             <div class="form-group col-12 col-md-10">
-              <input class="input-field money form-control" name="money" type="text" placeholder="Số tiền cần vay">
+              <input class="input-field money form-control" name="Số tiền cần vay" type="text" placeholder="Số tiền cần vay">
             </div>
 
             <div class="modal-footer">
@@ -495,14 +513,55 @@
   </div>
   <!--  End Modal - Popup form-->
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/index.js"></script>
-</body>
+  <!--  Success Noti Popup-->
+  <div id="success-popup" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="loading">
+            <div class="loading-img spinner-border text-success" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+            <div class="noti-msg">Đang gửi đăng ký</div>
+          </div>
 
-</html>
+          <div class="success">
+            <div class="success-img">
+              <svg viewBox="0 0 490.05 490.05">
+                <path class="success-path" d="M418.275,418.275c95.7-95.7,95.7-250.8,0-346.5s-250.8-95.7-346.5,0s-95.7,250.8,0,346.5S322.675,513.975,418.275,418.275z M157.175,207.575l55.1,55.1l120.7-120.6l42.7,42.7l-120.6,120.6l-42.8,42.7l-42.7-42.7l-55.1-55.1L157.175,207.575z" />
+              </svg>
+            </div>
+            <div class="noti-msg">Gửi đăng ký thành công. Nhân viên tư vấn sẽ liên hệ với anh/chị trong thời gian sớm nhất.</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  End Succes Noti Popup-->
+
+  <!--  Footer-->
+  <section class="footer">
+    <img class="footer-logo" src="assets/image/logo-(final).png" alt="Vay tiêu dùng Shinhan Finance">
+  </section>
+  <!--  End Footer-->
+
+  <!-- Bootstrap 4 -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!--End Bootstrap 4-->
+
+  <!--  Validator-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  <!--  End Validator-->
+
+  <!--  Owl carousel-->
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <!--  End Owl carousel-->
+  <script src="assets/js/index.js"></script>
+</body></html>

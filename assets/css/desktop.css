@@ -60,6 +60,7 @@
 
 .rtp-card-text {
   font-size: 1.1em;
+  padding: 15px 0;
 }
 
 .cta-btn {
@@ -98,17 +99,13 @@
   width: 70%;
 }
 
-.process-title::after {
-  width: 100px;
-}
-
 .customer-wrapper {
   width: 80%;
 }
 
 .customer-title {
   padding: 50px 0;
-  font-size: 2.5em;
+  font-size: 2.2em;
   letter-spacing: 1px;
 }
 
@@ -154,7 +151,7 @@
 }
 
 .info-text {
-  font-size: 1.2em;
+  font-size: 1.0em;
   padding-left: 40px;
 }
 
@@ -246,10 +243,6 @@
   z-index: 1;
 }
 
-.product-title::after {
-  width: 150px;
-}
-
 .list-group-item {
   font-size: 1.0em;
   padding: 10px 5px;
@@ -262,5 +255,21 @@
 
 .header-hotline {
   padding: 0 15px;
-  font-size: 2.0em;
+  font-size: 1.8em;
+}
+
+.loading-img,
+.success-img {
+  width: 80px;
+  height: 80px;
+  border-width: 8px;
+}
+
+.noti-msg {
+  font-size: 1.1em;
+  padding: 10px 0;
+}
+
+.header-phone-number {
+  font-weight: bolder;
 }

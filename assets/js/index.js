@@ -1,3 +1,4 @@
+//Carousel
 $('.owl-carousel').owlCarousel({
   loop: true,
   margin: 50,
@@ -17,75 +18,145 @@ $('.owl-carousel').owlCarousel({
     }
   }
 });
+//End Carousel
+//const google_sheet_url = "https://script.google.com/macros/s/AKfycbwnN--tOxFwPFYmMnDGCyo9JQreT15Ned7tz47ePfLW8bkHEWQ/exec";
+const google_sheet_url = "https://script.google.com/macros/s/AKfycbzk2zvRJXjbP59-jSNy9A2tzSkIiy3P2Fr4tTl041XlF1j8o_gC/exec";
 
+//Validator
 $("#page-form").validate({
-  onfocusout: false,
-  onkeyup: false,
+  onfocusout: function (element) {
+    this.element(element); // triggers validation
+  },
+  onkeyup: function (element, event) {
+    this.element(element); // triggers validation
+  },
   onclick: false,
   rules: {
-    "user": {
+    "Họ và Tên": {
       required: true
     },
-    "phone": {
+    "Số điện thoại": {
       required: true,
       digits: true
     },
-    "money": {
+    "Số tiền cần vay": {
       required: true
     },
-    "income": {
+    "Thu nhập hàng tháng": {
+      required: true
+    },
+    "Địa chỉ chỗ ở hiện tại": {
+      required: true
+    },
+    "Tên công ty đang công tác": {
       required: true
     }
   },
   messages: {
-    "user": {
+    "Họ và Tên": {
       required: "Vui lòng nhập họ tên"
     },
-    "phone": {
+    "Số điện thoại": {
       required: "Vui lòng nhập số điện thoại",
-      digits: "Số điện thoại chỉ bao gồm số"
+      digits: "Số điện thoại chỉ bao gồm số từ 0-9"
     },
-    "money": {
+    "Số tiền cần vay": {
       required: "Vui lòng nhập số tiền cần vay"
     },
-    "income": {
+    "Thu nhập hàng tháng": {
       required: "Vui lòng chọn mức thu nhập"
+    },
+    "Địa chỉ chỗ ở hiện tại": {
+      required: "Vui lòng nhập địa chỉ"
+    },
+    "Tên công ty đang công tác": {
+      required: "Vui lòng nhập tên công ty"
     }
+  },
+  submitHandler: function (form) {
+    loading()
+    showNoti()
+    $.post(google_sheet_url, $(form).serialize(), function () {
+      success()
+    })
   }
 });
 
 $("#popup-form").validate({
-  onfocusout: false,
-  onkeyup: false,
+  onfocusout: function (element) {
+    this.element(element); // triggers validation
+  },
+  onkeyup: function (element, event) {
+    this.element(element); // triggers validation
+  },
   onclick: false,
   rules: {
-    "user": {
+    "Họ và Tên": {
       required: true
     },
-    "phone": {
+    "Số điện thoại": {
       required: true,
       digits: true
     },
-    "money": {
+    "Số tiền cần vay": {
       required: true
     },
-    "income": {
+    "Thu nhập hàng tháng": {
+      required: true
+    },
+    "Địa chỉ chỗ ở hiện tại": {
+      required: true
+    },
+    "Tên công ty đang công tác": {
       required: true
     }
   },
   messages: {
-    "user": {
+    "Họ và Tên": {
       required: "Vui lòng nhập họ tên"
     },
-    "phone": {
+    "Số điện thoại": {
       required: "Vui lòng nhập số điện thoại",
-      digits: "Số điện thoại chỉ bao gồm số"
+      digits: "Số điện thoại chỉ bao gồm số từ 0-9"
     },
-    "money": {
+    "Số tiền cần vay": {
       required: "Vui lòng nhập số tiền cần vay"
     },
-    "income": {
+    "Thu nhập hàng tháng": {
       required: "Vui lòng chọn mức thu nhập"
+    },
+    "Địa chỉ chỗ ở hiện tại": {
+      required: "Vui lòng nhập địa chỉ"
+    },
+    "Tên công ty đang công tác": {
+      required: "Vui lòng nhập tên công ty"
     }
+  },
+  submitHandler: function (form) {
+    loading()
+    showNoti()
+    $.post(google_sheet_url, $(form).serialize(), function () {
+      success()
+      closePopupForm()
+    })
   }
 });
+//End Validator
+
+function showNoti() {
+  $("#success-popup").modal('toggle')
+}
+
+function loading() {
+  $(".loading").show()
+  $(".success").hide()
+}
+
+function success() {
+  $(".loading").hide()
+  $(".success").show()
+}
+
+function closePopupForm() {
+  $("#exampleModalCenter").modal('hide')
+}

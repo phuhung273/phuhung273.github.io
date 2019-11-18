@@ -122,10 +122,6 @@ label.error {
   align-items: center;
 }
 
-
-
-
-
 .zoom-container {
   width: 90%;
   height: 90%;
@@ -313,14 +309,6 @@ svg {
   position: relative;
 }
 
-.process-title::after {
-  content: "";
-  height: 5px;
-  background-color: #01529b;
-  display: block;
-  margin: 0 auto;
-}
-
 .customer-container {
   text-align: center;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(207, 156, 81, 0.3)), to(rgba(0, 82, 155, 0.6)));
@@ -335,15 +323,6 @@ svg {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
-
-
-
-
-
-
-
-
-
 
 
 .customer-card-title {
@@ -413,10 +392,6 @@ svg {
   background-image: url(../image/give-money.svg);
 }
 
-
-
-
-
 .modal-title {
   width: 100%;
   text-align: center;
@@ -428,15 +403,6 @@ svg {
 
 .modal button {
   text-transform: capitalize;
-}
-
-.product-title::after {
-  content: "";
-  /*  background-color: #01529b;*/
-  /*  color: #01529b;*/
-  display: block;
-  margin: 0 auto;
-  border: 2px solid #01529b;
 }
 
 .product-img img {
@@ -484,6 +450,14 @@ svg {
   height: 60%;
 }
 
-.header-hotline {
-  font-weight: bolder;
+.success-path {
+  fill: #2ecc71;
+}
+
+.success-img {
+  margin: 0 auto;
+}
+
+a {
+  color: black;
 }

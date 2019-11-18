@@ -50,6 +50,7 @@
 
 .rtp-card-text {
   font-size: 0.9em;
+  padding: 10px 0;
 }
 
 .form-info .cta-btn {
@@ -80,10 +81,6 @@
 .process-card-text {
   font-size: 0.9em;
   width: 90%;
-}
-
-.process-title::after {
-  width: 70px;
 }
 
 .customer-wrapper {
@@ -143,7 +140,7 @@
 }
 
 .info-text {
-  font-size: 0.8em;
+  font-size: 0.7em;
   padding-left: 30px;
 }
 
@@ -209,10 +206,6 @@
   font-size: 1.3em;
 }
 
-.product-title::after {
-  width: 70px;
-}
-
 .list-group-item {
   font-size: 0.8em;
   padding: 5px 5px;
@@ -220,10 +213,24 @@
 
 .second-rtp {
   padding-right: 10px;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
 .third-rtp {
   padding-left: 10px;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
+}
+
+.loading-img,
+.success-img {
+  width: 80px;
+  height: 80px;
+  border-width: 8px;
+}
+
+.noti-msg {
+  font-size: 0.9em;
+  padding: 10px 0;
 }
